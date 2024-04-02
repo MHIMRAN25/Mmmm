@@ -1,12 +1,15 @@
+
 module.exports.config = {
     name: "আমল",
-    version: "1.0.1",
-    hasPermssion: 0,
+    version: "1.0.0",
+    Permssion: 0,
     credits: "JRT",
     description: "Thả thính",
-    commandCategory: "Horoscope",
+    prefix: true,
+    Category: "Horoscope",
     usages: "[tag]",
-    cooldowns: 5
+    cooldowns: 5,
+    description: ""
 };
 
 module.exports.run = async ({ api, event}) => {
