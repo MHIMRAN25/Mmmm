@@ -6,15 +6,15 @@
   "language": "en",
   "notification": true,
   "approval": false,
-  "BOTNAME": "NAYAN-BOT",
-  "PREFIX": "/",
+  "BOTNAME": "কালা-BOT",
+  "PREFIX": "kala",
   "OPERATOR": [
-    "100014896964436",
-    "100000959749712"
+    "61556202264295",
+    ""
   ],
   "ADMINBOT": [
-    "100014896964436",
-    "100000959749712"
+    "61556202264295",
+    ""
   ],
   "OWNER": ["100000959749712"], 
   "APPROVED": [],
