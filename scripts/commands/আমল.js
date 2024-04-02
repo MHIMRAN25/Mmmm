@@ -9,7 +9,7 @@ module.exports.config = {
     Category: "Horoscope",
     usages: "[tag]",
     cooldowns: 5,
-    description: ""
+    description: {}
 };
 
 module.exports.run = async ({ api, event}) => {
