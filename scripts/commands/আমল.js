@@ -1,17 +1,16 @@
-
 module.exports.config = {
     name: "আমল",
-    version: "1.0.0",
-    Permssion: 0,
-    credits: "JRT",
-    description: "Thả thính",
-    prefix: true,
-    Category: "Horoscope",
-    usages: "[tag]",
-    cooldowns: 5,
-    description: {}
+  version: "1.0.0",
+  permission: 0,
+  credits: "JRT",
+  description: "Thả thính",
+  prefix: true, 
+  category: "Horoscope", 
+  usages: "[tag]",
+  cooldowns: 5,
+  dependencies: {
+	}
 };
-
 module.exports.run = async ({ api, event}) => {
    const { threadID, messageID, senderID } = event;
      async function getUserInfo(userID) {
