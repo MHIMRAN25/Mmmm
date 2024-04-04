@@ -14,11 +14,10 @@ module.exports.config = {
   dependencies: {
 	},
 		guide: {
-			en: "   {pn} [link profile | uid]"
-		}
-	};
+			en: " {pn} [link profile | uid]"
+	}
 
-	langs: {
+ langs: {
 		vi: {
 			alreadyInGroup: "Đã có trong nhóm",
 			successAdd: "- Đã thêm thành công %1 thành viên vào nhóm",
@@ -28,7 +27,7 @@ module.exports.config = {
 			cannotGetUid: "Không thể lấy được uid của người dùng này",
 			linkNotExist: "Profile url này không tồn tại",
 			cannotAddUser: "Bot bị chặn tính năng hoặc người dùng này chặn người lạ thêm vào nhóm"
-		},
+		};
 		en: {
 			alreadyInGroup: "Already in group",
 			successAdd: "- Successfully added %1 members to the group",
