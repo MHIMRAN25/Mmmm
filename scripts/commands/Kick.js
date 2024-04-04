@@ -1,17 +1,17 @@
+
 module.exports.config = {
-	name: "kick",
-	version: "1.0.0", 
-	Permssion: 0,
-	credits: "Mirai Team",
-	description: "Clear the person you need to remove from the group by tag",
-        prefix: true, 
-	Category: "System", 
-	usages: "[tag]", 
-	cooldowns: 5,
-dependencies: {
+    name: "kick",
+  version: "1.0.0",
+  permission: 0,
+  credits: "Mirai Team",
+  description: "Clear the person you need to remove from the group by tag",
+  prefix: true, 
+  category: "System", 
+  usages: "[tag]",
+  cooldowns: 5,
+  dependencies: {
 	}
 };
-  
 module.exports.languages = {
 	"vi": {
 		"error": "Đã có lỗi xảy ra, vui lòng thử lại sau",
