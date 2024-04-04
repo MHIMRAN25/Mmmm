@@ -3,47 +3,52 @@ module.exports.config = {
     name: "kick",
   version: "1.0.0",
   permission: 0,
-  credits: "Mirai Team",
-  description: "Clear the person you need to remove from the group by tag",
+  credits: "MH--IMRAN",
+  description: "Xoá người bạn cần xoá khỏi nhóm bằng cách tag hoặc reply",
   prefix: true, 
-  category: "System", 
-  usages: "[tag]",
+  category: "nsfw", 
+  usages: "[tag/reply/all]",
   cooldowns: 5,
   dependencies: {
 	}
 };
-module.exports.languages = {
-	"vi": {
-		"error": "Đã có lỗi xảy ra, vui lòng thử lại sau",
-		"needPermssion": "Cần quyền quản trị viên nhóm\nVui lòng thêm và thử lại!",
-		"missingTag": "Bạn phải tag người cần kick"
-	},
-	"en": {
-		"error": "Error! An error occurred. Please try again later!",
-		"needPermssion": "Need group admin\nPlease add and try again!",
-		"missingTag": "You need tag some person to kick"
-	}
-}
-
-module.exports.run = async function({ api, event, getText, Threads }) {
-	var mention = Object.keys(event.mentions);
-	try {
-		let dataThread = (await Threads.getData(event.threadID)).threadInfo;
-		if (!dataThread.adminIDs.some(item => item.id == api.getCurrentUserID())) return api.sendMessage(getText("needPermssion"), event.threadID, event.messageID);
-		if(!mention[0]) return api.sendMessage("You have to tag the need to kick",event.threadID);
-		if (dataThread.adminIDs.some(item => item.id == event.senderID)) {
-			for (const o in mention) {
-				setTimeout(() => {
-					api.removeUserFromGroup(mention[o],event.threadID) 
-				},3000)
-			}
-		}
-	} catch { return api.sendMessage(getText("error"),event.threadID) }
-}
-
-
-module.exports.run = function({ api, event, getText }) {
-	if (event.messageReply.senderID != api.getCurrentUserID()) return api.sendMessage(getText("returnCant"), event.threadID, event.messageID);
-	if (event.type != "message_reply") return api.sendMessage(getText("missingReply"), event.threadID, event.messageID);
-	return api.removeUserFromGroup(event.messageReply.messageID);
-			}
+module.exports.run = async function ({
+    args,
+    api,
+    event,
+    Threads
+}) {
+    var {
+        participantIDs
+    } = (await Threads.getData(event.threadID)).threadInfo;
+    const botID = api.getCurrentUserID();
+    try {
+        if (args.join().indexOf('@') !== -1) {
+            var mention = Object.keys(event.mentions);
+            for (let o in mention) {
+                setTimeout(() => {
+                    return api.removeUserFromGroup(mention[o], event.threadID)
+                }, 1000)
+            }
+        } else {
+        if (event.type == "message_reply") {
+                uid = event.messageReply.senderID
+                return api.removeUserFromGroup(uid, event.threadID)
+            } else {
+                if (!args[0]) return api.sendMessage(`Vui lòng tag hoặc reply người cần kick`, event.threadID, event.messageID)
+                else {
+                    if (args[0] == "all") {
+                        const listUserID = event.participantIDs.filter(ID => ID != botID && ID != event.senderID);
+                        for (let idUser in listUserID) {
+                            setTimeout(() => {
+                                return api.removeUserFromGroup(idUser, event.threadID)
+                            }, 1000)
+                        }
+                    }
+                }
+            }
+        }
+    } catch {
+        return api.sendMessage('ccc', event.threadID, event.messageID);
+    }
+			    }
