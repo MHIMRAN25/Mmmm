@@ -6,7 +6,7 @@ module.exports.config = {
 	prefix: true,
 	description: "ban or unblock users",
 	category: "user",
-	usages: " ",
+	usages: "box all",
 	cooldowns: 5
 };
 
