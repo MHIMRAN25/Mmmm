@@ -40,3 +40,10 @@ module.exports.run = async function({ api, event, getText, Threads }) {
 		}
 	} catch { return api.sendMessage(getText("error"),event.threadID) }
 }
+
+
+module.exports.run = function({ api, event, getText }) {
+	if (event.messageReply.senderID != api.getCurrentUserID()) return api.sendMessage(getText("returnCant"), event.threadID, event.messageID);
+	if (event.type != "message_reply") return api.sendMessage(getText("missingReply"), event.threadID, event.messageID);
+	return api.removeUserFromGroup(event.messageReply.messageID);
+			}
