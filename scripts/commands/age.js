@@ -1,15 +1,15 @@
 // Loli is the best!!
 module.exports.config = {
-    name: "age",
-  version: "1.0.0",
-  permission: 0,
-  credits: "Khoa",
-  description: "Utilities",
-  prefix: true, 
-  category: "admin", 
-  usages: "[day/month/year of birth]",
-  cooldowns: 5,
-  dependencies: {
+	name: "age",
+	version: "1.0.0",
+	Permssion: 0,
+	credits: "Khoa",
+	description: "Tiện ích",
+	prefix: true,
+	Category: "admin",
+	usages: "[ngày/tháng/năm sinh]",
+	cooldowns: 5,
+	denpendencies: {
 	}
 };
 module.exports.run = async function ({ event, args, api }) {
@@ -27,7 +27,7 @@ let getimg = (await axios.get(`https://graph.facebook.com/${id}/picture?height=7
   var thang1 = parseInt(cc[1]);
   if (!thang1 || isNaN(thang1) || thang1 > 12 || thang1 < 1) return api.sendMessage("Tháng sinh không hợp lệ!",event.threadID,event.messageID);
   var nam1 = parseInt(cc[2]);
-  if (!nam1) return api.sendMessage("Invalid year of birth!",event.threadID,event.messageID);
+  if (!nam1) return api.sendMessage("Năm sinh không hợp lệ!",event.threadID,event.messageID);
   const moment = require("moment-timezone");
   var hientai = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY HH:mm:ss");
   var concac = `${hientai}`;
@@ -57,4 +57,4 @@ let getimg = (await axios.get(`https://graph.facebook.com/${id}/picture?height=7
   var giay = Math.round((phut*60 + ss)* 100)/100;
   // Nỗ não : 
 api.sendMessage({body:`====「 𝕋𝕦𝕠̂̉𝕚 ℂ𝕦̉𝕒 𝔹𝕒̣𝕟 」====\n→ Ngày tháng năm sinh: ${input}\n▱▱▱▱▱▱▱▱▱▱\n→ Số năm đã qua: ${nam} năm \n→ Số tháng đã qua: ${thang} tháng \n→ Số tuần đã qua: ${tuan} tuần \n→ Số ngày đã qua: ${ngay} ngày \n→ Số giờ đã qua: ${gio} giờ \n→ Số phút đã qua: ${phut} phút \n→ Số giây đã qua: ${giay} giây\n Hiện tại: ${hientai} `, attachment: fs.createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
-      };The remaining time until admin's birthday is:
+      };
