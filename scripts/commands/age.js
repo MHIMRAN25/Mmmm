@@ -1,15 +1,14 @@
-// Loli is the best!!
 module.exports.config = {
-	name: "age",
-	version: "1.0.0",
-	Permssion: 0,
-	credits: "Khoa",
-	description: "Tiện ích",
-	prefix: true,
-	Category: "admin",
-	usages: "[ngày/tháng/năm sinh]",
-	cooldowns: 5,
-	denpendencies: {
+    name: "age",
+  version: "1.0.0",
+  permission: 0,
+  credits: "Khoa",
+  description: "Utilities",
+  prefix: true, 
+  category: "admin", 
+  usages: "[day/month/year of birth]",
+  cooldowns: 5,
+  dependencies: {
 	}
 };
 module.exports.run = async function ({ event, args, api }) {
