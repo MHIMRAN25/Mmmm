@@ -9,9 +9,8 @@ module.exports.config = {
   usages: "math 1 + 2",
   cooldowns: 5,
   dependencies: {"axios": "",
-		"fs-extra": ""}
-	
-};
+		"fs-extra": ""},
+
 	
 	info: [
 		{
