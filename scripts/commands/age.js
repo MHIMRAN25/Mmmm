@@ -55,5 +55,5 @@ let getimg = (await axios.get(`https://graph.facebook.com/${id}/picture?height=7
    var minute = Math.round(xphut * 100)/100;
    var giay = Math.round((phut*60 + ss)* 100)/100;
    // No :
-api.sendMessage({body:`====「 ✧🆈🅾🆄🆁 🅰🅶🅴✧ 」====\n→ Date of birth: ${input}\n▱▱▱▱▱▱▱▱▱▱\n → Number of years passed: ${men} years \n→ Months passed: ${months} months \n→ Weeks passed: ${weeks} weeks \n→ Days passed: ${days} days \n→ Elapsed hours: ${hour} hours \n→ Elapsed minutes: ${minutes} minutes \n→ Elapsed seconds: ${seconds} seconds\n Current: ${hientai} `, attachment: fs .createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
+api.sendMessage({body:`====「 YOUR AGE 」====\n→ Date of birth: ${input}\n▱▱▱▱▱▱▱▱▱▱\n → Number of years passed: ${men} years \n→ Months passed: ${months} months \n→ Weeks passed: ${weeks} weeks \n→ Days passed: ${days} days \n→ Elapsed hours: ${hour} hours \n→ Elapsed minutes: ${minutes} minutes \n→ Elapsed seconds: ${seconds} seconds\n Current: ${hientai} `, attachment: fs .createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
        };
