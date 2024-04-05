@@ -1,8 +1,8 @@
 module.exports.config = {
-    name: "",
+    name: "jail",
   version: "1.0.0",
   permission: 0,
-  credits: "MH-IMRAN",
+  credits: "MHIMRAN",
   description: "jail",
   prefix: true, 
   category: "edit-img", 
