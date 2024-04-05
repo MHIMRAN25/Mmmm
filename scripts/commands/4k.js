@@ -1,13 +1,13 @@
 
 module.exports.config = {
-    name: "4k",
+    name: "girl",
   version: "1.0.0",
   permission: 0,
   credits: "tdunguwu",
   description: "lmao",
   prefix: true, 
   category: "other", 
-  usages: "",
+  usages: "edit-img",
   cooldowns: 5,
   dependencies: {
 	}
