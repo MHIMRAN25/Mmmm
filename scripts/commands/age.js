@@ -2,7 +2,7 @@
 module.exports.config = {
 name: "age",
 version: "1.0.0",
-hasPermssion: 0,
+Permssion: 0,
 credits: "Khoa",
 description: "Tiện ích",
 prefix: true,
