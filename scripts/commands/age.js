@@ -1,14 +1,15 @@
+// Loli is the best!!
 module.exports.config = {
-     name: "age",
-   version: "1.0.0",
-   permissions: 0,
-   credits: "Faculty",
-   description: "Utilities",
-   prefix: true,
-   category: "admin",
-   usages: "[day/month/year of birth]",
-   cooldowns: 5,
-   dependencies: {
+name: "age",
+version: "1.0.0",
+hasPermssion: 0,
+credits: "Khoa",
+description: "Tiện ích",
+prefix: true,
+Category: "admin",
+usages: "[date/month/year of birth]",
+cooldowns: 5,
+denpendencies: {
 }
 };
 module.exports.run = async function ({ event, args, api }) {
@@ -19,14 +20,14 @@ const fs = global.nodemodule["fs-extra"];
 let getimg = (await axios.get(`https://graph.facebook.com/${id}/picture?height=750&width=750&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`, { responseType: 'arraybuffer' })).data;
    fs.writeFileSync(path, Buffer.from(getimg, "utf-8"));
   var input = args[0];
-   if (!input) return api.sendMessage(`Please enter the correct format >age [day/month/year]`,event.threadID,event.messageID);
+   if (!input) return api.sendMessage(`Please enter the correct format >age [date/month/year of birth]`,event.threadID,event.messageID);
    var cc = input.split("/");
    var now1 = parseInt(cc[0]);
    if (!day1 || isNaN(day1) || day1 > 31 || day1 < 1) return api.sendMessage("Invalid date of birth!",event.threadID,event.messageID);
    var thang1 = parseInt(cc[1]);
    if (!month1 || isNaN(month1) || month1 > 12 || month1 < 1) return api.sendMessage("Invalid month of birth!",event.threadID,event.messageID);
    var name1 = parseInt(cc[2]);
-   if (!nam1) return api.sendMessage("Invalid year of birth!!",event.threadID,event.messageID);
+   if (!nam1) return api.sendMessage("Invalid year of birth!",event.threadID,event.messageID);
    const moment = require("moment-timezone");
    var hientai = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY HH:mm:ss");
    var concac = `${hientai}`;
@@ -54,6 +55,6 @@ let getimg = (await axios.get(`https://graph.facebook.com/${id}/picture?height=7
    var xphut = hour*60 + mm + ss/60;
    var minute = Math.round(xphut * 100)/100;
    var giay = Math.round((phut*60 + ss)* 100)/100;
-   // No :
-api.sendMessage({body:`====「 YOUR AGE 」====\n→ Date of birth: ${input}\n▱▱▱▱▱▱▱▱▱▱\n → Number of years passed: ${men} years \n→ Months passed: ${months} months \n→ Weeks passed: ${weeks} weeks \n→ Days passed: ${days} days \n→ Elapsed hours: ${hour} hours \n→ Elapsed minutes: ${minutes} minutes \n→ Elapsed seconds: ${seconds} seconds\n Current: ${hientai} `, attachment: fs .createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
+   // Brainstorm:
+api.sendMessage({body:`====「 𝕋𝕦𝕠̂̉𝕚 ℂ𝕦̉𝕒 𝔹𝕒̣𝕟 」====\n→ Date of birth: ${input}\n▱▱▱▱▱▱▱▱▱▱\n → Number of years passed: ${men} years \n→ Months passed: ${months} months \n→ Weeks passed: ${weeks} weeks \n→ Days passed: ${days} days \n→ Elapsed hours: ${hour} hours \n→ Elapsed minutes: ${minutes} minutes \n→ Elapsed seconds: ${seconds} seconds\n Current: ${hientai} `, attachment: fs .createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
        };
