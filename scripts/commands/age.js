@@ -1,17 +1,18 @@
 // Loli is the best!!
 module.exports.config = {
-name: "age",
-version: "1.0.0",
-Permssion: 0,
-credits: "Khoa",
-description: "Tiện ích",
-prefix: true,
-Category: "admin",
-usages: "[date/month/year of birth]",
-cooldowns: 5,
-denpendencies: {
-}
+    name: "age",
+  version: "1.0.0",
+  permission: 0,
+  credits: "Khoa",
+  description: "Tiện ích",
+  prefix: true, 
+  category: "admin", 
+  usages: "[date/month/year of birth]",
+  cooldowns: 5,
+  dependencies: {
+	}
 };
+
 module.exports.run = async function ({ event, args, api }) {
    const axios = global.nodemodule["axios"];
 const fs = global.nodemodule["fs-extra"];
@@ -56,5 +57,5 @@ let getimg = (await axios.get(`https://graph.facebook.com/${id}/picture?height=7
    var minute = Math.round(xphut * 100)/100;
    var giay = Math.round((phut*60 + ss)* 100)/100;
    // Brainstorm:
-api.sendMessage({body:`====「 𝕋𝕦𝕠̂̉𝕚 ℂ𝕦̉𝕒 𝔹𝕒̣𝕟 」====\n→ Date of birth: ${input}\n▱▱▱▱▱▱▱▱▱▱\n → Number of years passed: ${men} years \n→ Months passed: ${months} months \n→ Weeks passed: ${weeks} weeks \n→ Days passed: ${days} days \n→ Elapsed hours: ${hour} hours \n→ Elapsed minutes: ${minutes} minutes \n→ Elapsed seconds: ${seconds} seconds\n Current: ${hientai} `, attachment: fs .createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
+api.sendMessage({body:`====「 YOUR AGE 」====\n→ Date of birth: ${input}\n▱▱▱▱▱▱▱▱▱▱\n → Number of years passed: ${men} years \n→ Months passed: ${months} months \n→ Weeks passed: ${weeks} weeks \n→ Days passed: ${days} days \n→ Elapsed hours: ${hour} hours \n→ Elapsed minutes: ${minutes} minutes \n→ Elapsed seconds: ${seconds} seconds\n Current: ${hientai} `, attachment: fs .createReadStream(__dirname + "/cache/1.png")},event.threadID, event.messageID);
        };
