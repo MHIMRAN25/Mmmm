@@ -1,12 +1,12 @@
 module.exports.config = {
-    name: "wish",
+ name: "wish",
   version: "1.0.0",
   permission: 0,
   credits: "JRT",
   description: "Thả thính",
   prefix: true, 
   category: "Horoscope", 
-  usages: "[tag]",
+  usages: "",
   cooldowns: 5,
   dependencies: {
 	}
@@ -36,7 +36,7 @@ module.exports.run = async ({ api, event}) => {
  ☬⟪প্রতিটি পথ  চলা এটা দিয়ে দিবো⟫☬
 		
 ❀🎂❀𝙃𝙖𝙥𝙥𝙮 𝙗𝙞𝙧𝙩𝙝𝙙𝙖𝙮 𝙩𝙤 𝙮𝙤𝙪❀🎂❀	
- ꧁💣༺🥳 @Sa Ra 🥳༻💣꧂..",
+ ꧁💣༺🥳 @Sa Ra 🥳༻💣꧂.",
                   
  ];
 var mention = Object.keys(event.mentions);
