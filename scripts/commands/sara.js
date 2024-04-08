@@ -19,9 +19,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("sara")==0 || event.body.indexOf("সারা")==0 || event.body.indexOf("chara")==0 || event.body.indexOf("@Sa Ra")==0) {
 		var msg = {
-				body:" HAPPY birthday 
-
-  ",
+				body: ["HAPPY birthday.",
                   
  ];
 var mention = Object.keys(event.mentions);
