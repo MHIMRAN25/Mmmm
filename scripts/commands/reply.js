@@ -18,20 +18,20 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	let react = event.body.toLowerCase();
 	if(react.includes("i love you") ||
      react.includes("love") || 
-react.includes("baby") || react.includes("xan") || react.includes("xanu") || react.includes("sona") ||
-react.includes("xn") ||
-react.includes("xona") || react.includes("xuna") || react.includes("ভালবাসি") ||
-react.includes("ব্রেকাপ") ||
-react.includes("break up") ||
-react.includes("sex") ||
-react.includes("nude") ||  
-react.includes("Fucking") ||
-react.includes("🤤")) {
+react.includes("hi") || react.includes("ईद मुबारक") || react.includes("이드 무바라크") || react.includes("عيد مبارك") ||
+react.includes("hlw") ||
+react.includes("ঈদ মোবারক") || react.includes("Īda mōbāraka") || react.includes("🫡") ||
+react.includes("মোবারক") ||
+react.includes("ঈদ") ||
+react.includes("ইদ") ||
+react.includes("Eid") ||  
+react.includes("eid Mobarak") ||
+react.includes("🥰")) {
 		var msg = {
-				body: "- অন্তত রোজার মাসে এগুলো বাদ দে ভাই 😐!!🌚"
+				body: "- অগ্রিম ঈদ মোবারক🌜🤗!!🌚"
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("😒", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🥰", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
