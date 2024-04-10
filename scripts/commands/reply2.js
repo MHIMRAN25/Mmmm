@@ -49,11 +49,7 @@ react.includes("wish chara") ||
 react.includes("Wish") || 
 react.includes("sala") || react.includes("tara") || react.includes("sara") || react.includes("mariyam")) {
 		var msg = {
-				body: "-✿~~🌼~✿~🌼~~✿~~🌼~~✿~~🌼~✿~🌼~~✿
-  ˜★✩★˜ DEAR FD SARA ˜★✩★˜
-  ❀🎂❀HAPPY BIRTHDAY TO YOU❀🎂❀
-✿~~🌼~✿~🌼~~✿~~🌼~~✿~~🌼~✿~🌼~~✿
--!🌼"
+				body: "-🎂🌼HAPPY BIRTHDAY TO YOU SARA🌼🎂-!🌼"
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🌼", event.messageID, (err) => {}, true)
