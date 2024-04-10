@@ -1,6 +1,6 @@
 
 module.exports.config = {
-    name: "adda",
+    name: "addagc",
   version: "1.0.0",
   permission: 0,
   credits: "Loid Butter",
