@@ -52,16 +52,15 @@ react.includes("sala") || react.includes("tara") || react.includes("sara") || re
 		var msg = {
 				body: "- 
 
-✿ 🌼 ✿ 🌼  ✿  🌼  ✿  🌼  ✿ 🌼  ✿
+✿~~🌼~✿~🌼~~✿~~🌼~~✿~~🌼~✿~🌼~~✿
 
-  ˜°•✩•°˜ DEAR FD SARA ˜°•✩•°˜
-   ❀🎂❀𝙃𝙖𝙥𝙥𝙮 𝙗𝙞𝙧𝙩𝙝𝙙𝙖𝙮 𝙩𝙤 𝙮𝙤𝙪❀🎂❀
-✿  🌼  ✿ 🌼  ✿  🌼  ✿  🌼  ✿ 🌼 ✿
-
--!!😾"
+  ˜°★✩★°˜ DEAR FD SARA ˜°★✩★°˜
+  ❀🎂❀𝙃𝙖𝙥𝙥𝙮 𝙗𝙞𝙧𝙩𝙝𝙙𝙖𝙮 𝙩𝙤 𝙮𝙤𝙪❀🎂❀
+✿~~🌼~✿~🌼~~✿~~🌼~~✿~~🌼~✿~🌼~~✿
+-!🌼"
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🤬", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🌼", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
