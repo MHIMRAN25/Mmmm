@@ -12,7 +12,6 @@ module.exports.config = {
   dependencies: {
 	}
 };
-
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
@@ -52,7 +51,7 @@ react.includes("sala") || react.includes("tara") || react.includes("sara") || re
 		var msg = {
 				body: "-✿~~🌼~✿~🌼~~✿~~🌼~~✿~~🌼~✿~🌼~~✿
   ˜★✩★˜ DEAR FD SARA ˜★✩★˜
-  ❀🎂❀𝙃𝙖𝙥𝙥𝙮 𝙗𝙞𝙧𝙩𝙝𝙙𝙖𝙮 𝙩𝙤 𝙮𝙤𝙪❀🎂❀
+  ❀🎂❀HAPPY BIRTHDAY TO YOU❀🎂❀
 ✿~~🌼~✿~🌼~~✿~~🌼~~✿~~🌼~✿~🌼~~✿
 -!🌼"
 			}
