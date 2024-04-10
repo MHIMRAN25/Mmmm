@@ -16,8 +16,8 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("i love you") ||
-     react.includes("love") || 
+	if(react.includes("ঈদুল ফিতর") ||
+     react.includes("eid") || 
 react.includes("hi") || react.includes("ईद मुबारक") || react.includes("이드 무바라크") || react.includes("عيد مبارك") ||
 react.includes("hlw") ||
 react.includes("ঈদ মোবারক") || react.includes("Īda mōbāraka") || react.includes("🫡") ||
@@ -26,12 +26,12 @@ react.includes("ঈদ") ||
 react.includes("ইদ") ||
 react.includes("Eid") ||  
 react.includes("eid Mobarak") ||
-react.includes("🥰")) {
+react.includes("🌜")) {
 		var msg = {
-				body: "- অগ্রিম ঈদ মোবারক🌜🤗!!🌚"
+				body: "~অগ্রিম ঈদ মোবারক🌜🤗!!🌚"
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("🥰", event.messageID, (err) => {}, true)
+    api.setMessageReaction("🌜", event.messageID, (err) => {}, true)
 		}
 	}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
