@@ -36,6 +36,9 @@ react.includes("ভুল সালাম দিলে কি হয়")) {
 
                }
 
+module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+	var { threadID, messageID } = event;
+	let react = event.body.toLowerCase();
 if (react.includes("tahole salam kivabe dite hoy") ||
      react.includes("তাহলে সালাম কিভাবে দেয়") || 
 react.includes("তুই সালাম দে তো") || react.includes("tui salam de to") || react.includes("salam kaiche deti he") || react.includes("salam kemne dey")) {
