@@ -1,5 +1,5 @@
 const fs = require("fs");
-module.exports.config = {
+module.exports.🤣config = {
     name: "wish",
   version: "1.0.0",
   permission: 0,
