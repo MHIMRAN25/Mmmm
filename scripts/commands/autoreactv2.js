@@ -1,8 +1,8 @@
 const fs = require("fs");
 module.exports.config = {
     name: "autoreactv2",
-  version: "1.0.0",
-  permission: 0,
+  version: "1.0.1",
+  permission: 2,
   credits: "John Lester",
   description: "No Prefix",
   prefix: true, 
