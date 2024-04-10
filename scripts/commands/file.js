@@ -12,16 +12,6 @@ module.exports.config = {
   dependencies: {
 	}
 };
-module.exports.config = {
-    name: "file",
-    version: "1.0.1",
-    hasPermssion: 2,
-    credits: "NTKhang",
-    description: "",
-    commandCategory: "Admin",
-    usages: "
-};
-
 module.exports.handleReply = ({ api, event, args, handleReply }) => {
     if(event.senderID != handleReply.author) return; 
     const fs = require("fs-extra");
