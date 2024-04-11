@@ -10,11 +10,11 @@ jobs:
   build:
 
 
-    runs-on: ubuntu-latest 24/7 hours runs on this bot
+    runs-on: ubuntu-latest 
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [24.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
