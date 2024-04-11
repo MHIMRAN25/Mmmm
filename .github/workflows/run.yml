@@ -10,7 +10,7 @@ jobs:
   build:
 
 
-    runs-on: 24/7 hours
+    runs-on: ubuntu-latest 24/7 hours runs on this bot
 
     strategy:
       matrix:
