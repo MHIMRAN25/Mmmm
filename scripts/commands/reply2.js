@@ -15,41 +15,41 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("hlw sara") || react.includes("hey sara") || 
-react.includes("sara") || 
-react.includes("Sara") ||
-react.includes("SARA") ||
-react.includes("সারা") ||
-react.includes("ছাড়া") || 
-react.includes("chara") || 
-react.includes("cara") ||
-react.includes("CHARA") ||        react.includes("tara") || 
-react.includes("@Sa ra") ||
-react.includes("@SA RA") ||
-react.includes("সা রা") || 
-react.includes("পচাঁপ্রতি") || 
-react.includes("পানি চোরা রানু মন্ডল") ||
-react.includes("miss sara") ||
-react.includes("mrs.moon") ||
-react.includes("sara") ||
-react.includes("sara") || 
-react.includes(" s a r a") ||
-react.includes("Sara") ||
-react.includes("sAra") ||
-react.includes("saRa") ||
+	if(react.includes("") || react.includes("") || 
+react.includes("") || 
+react.includes("") ||
+react.includes("") ||
+react.includes("") ||
+react.includes("") || 
+react.includes("") || 
+react.includes("") ||
+react.includes("") ||        react.includes("") || 
+react.includes("") ||
+react.includes("") ||
+react.includes("") || 
+react.includes("") || 
+react.includes("") ||
+react.includes("") ||
+react.includes("") ||
+react.includes("") ||
+react.includes("") || 
+react.includes("") ||
+react.includes("") ||
+react.includes("") ||
+react.includes("") ||
 react.includes("wish") ||
-react.includes("SaRa") || 
+react.includes("") || 
 react.includes("happy birthday") ||
-react.includes("Happy birthday sara") ||
-react.includes("happy birthday sara") ||
-react.includes("wish sara") ||
-react.includes("wish sara") ||
-react.includes("wishsara") || 
-react.includes("wish chara") || 
-react.includes("Wish") || 
-react.includes("sala") || react.includes("tara") || react.includes("sara") || react.includes("mariyam")) {
+react.includes("Happy birthday") ||
+react.includes("") ||
+react.includes("") ||
+react.includes("") ||
+react.includes("") || 
+react.includes("") || 
+react.includes("") || 
+react.includes("") || react.includes("") || react.includes("") || react.includes("")) {
 		var msg = {
-				body: "-🎂🌼HAPPY BIRTHDAY TO YOU SARA🌼🎂-!🌼"
+				body: "-🎂🌼HAPPY BIRTHDAY TO YOU🌼🎂-"
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🌼", event.messageID, (err) => {}, true)
