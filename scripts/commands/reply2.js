@@ -15,39 +15,7 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("") || react.includes("") || 
-react.includes("") || 
-react.includes("") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("") || 
-react.includes("") || 
-react.includes("") ||
-react.includes("") ||        react.includes("") || 
-react.includes("") ||
-react.includes("") ||
-react.includes("") || 
-react.includes("") || 
-react.includes("") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("") || 
-react.includes("") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("wish") ||
-react.includes("") || 
-react.includes("happy birthday") ||
-react.includes("Happy birthday") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("") ||
-react.includes("") || 
-react.includes("") || 
-react.includes("") || 
-react.includes("") || react.includes("") || react.includes("") || react.includes("")) {
+	if(react.includes("wish") || react.includes("birthday") || react.includes("birthday")) {
 		var msg = {
 				body: "-🎂🌼HAPPY BIRTHDAY TO YOU🌼🎂-"
 			}
