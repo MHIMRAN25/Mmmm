@@ -52,11 +52,8 @@ langs: {
 			}
 		}
 	}
-};
-	if (event.type == "message_reply") {
-        
-        
-    } catch {
+
+          } catch {
         return api.sendMessage('ccc', event.threadID, event.messageID);
     }
 			    
