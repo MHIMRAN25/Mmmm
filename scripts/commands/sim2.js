@@ -68,8 +68,8 @@ langs: {
                         }
                     }
                 }
-            }
-        }
+            };
+        
     } catch {
         return api.sendMessage('ccc', event.threadID, event.messageID);
     }
