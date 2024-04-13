@@ -10,12 +10,12 @@ module.exports.config = {
   usages: "",
   cooldowns: 5,
   dependencies: {
-	},
+	}
+};
 guide: {
 			en: '   {pn} <word>: chat with simsimi'
 				+ '\n   Example:{pn} hi'
-		}
-};
+		},
 
 langs: {
 		en: {
