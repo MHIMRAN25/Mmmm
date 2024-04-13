@@ -32,7 +32,7 @@ react.includes("🌜")) {
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🌜", event.messageID, (err) => {}, true)
-		},
+		}
 if(react.includes("wish") || react.includes("birthday") || react.includes("birthday")) {
 		var msg = {
 				body: "-🎂🌼HAPPY BIRTHDAY TO YOU🌼🎂-"
@@ -50,7 +50,7 @@ react.includes("阿萨拉穆·阿拉库姆")) {
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🥰", event.messageID, (err) => {}, true)
-		},
+		}
 	ncludes("salamer uttor") || react.includes("السلامعليكم") || react.includes("assalamualaykum") ||
 react.includes("assalamulaikum") ||
 react.includes("আসসালামুআলাইকুম") ||
@@ -70,14 +70,14 @@ react.includes("ভুল সালাম দিলে কি হয়")) {
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("❌", event.messageID, (err) => {}, true)
-		},
+		}
 react.includes("তুই সালাম দে তো") || react.includes("tui salam de to") || react.includes("salam kaiche deti he") || react.includes("salam kemne dey")) {
 		var msg = {
 				body: "❌ One word wrong means change of meaning. So please give salam correctly➡️Arabic- السلام عليكم و الرحمة✅ ا➡️বাংলা - আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি✅➡️English ল- assalamu alaikum wa Rahmatullah✅"
 			}
 			api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("✅", event.messageID, (err) => {}, true)
-		},
+    api.setMessageReaction("❌", event.messageID, (err) => {}, true)
+		}
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
 
                };
