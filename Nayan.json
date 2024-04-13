@@ -7,7 +7,7 @@
   "notification": true,
   "approval": false,
   "BOTNAME": "কালা-BOT",
-  "PREFIX": ".",
+  "PREFIX": ",",
   "OPERATOR": [
     "61556202264295",
     ""
