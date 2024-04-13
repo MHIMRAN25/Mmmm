@@ -6,7 +6,7 @@ module.exports.config = {
   credits: "Loid Butter",
   description: " en: Add user to adda group",
   prefix: true, 
-  category: "adda", 
+  category: "support", 
   usages: "",
   cooldowns: 5,
   dependencies: {
