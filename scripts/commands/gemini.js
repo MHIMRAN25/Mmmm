@@ -11,6 +11,7 @@ module.exports.config = {
   cooldowns: 5,
   dependencies: {
 	},
+};
     guide: {
       en: "{p}{n} <Query>",
     },
