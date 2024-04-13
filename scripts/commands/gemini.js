@@ -11,7 +11,6 @@ module.exports.config = {
   cooldowns: 5,
   dependencies: {
 	},
-};
     guide: {
       en: "{p}{n} <Query>",
     },
@@ -81,5 +80,4 @@ module.exports.config = {
     } catch (error) {
       console.error("Error:", error.message);
     }
-  }
-};
+  };
