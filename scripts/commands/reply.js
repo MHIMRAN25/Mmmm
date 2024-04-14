@@ -39,8 +39,8 @@ if(react.includes("wish") || react.includes("birthday") || react.includes("birth
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🌼", event.messageID, (err) => {}, true)
-},
-includes("السلام عليكم") || 
+}
+if(react.includes("السلام عليكم") || 
 react.includes("السلام") || react.includes("असलमु अलैकुम") || react.includes("assalamu") || react.includes("assalamu alaikum") ||
 react.includes("সালামের উত্তর") ||  
 react.includes("アッサラーム・アライクム") ||
@@ -51,7 +51,7 @@ react.includes("阿萨拉穆·阿拉库姆")) {
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🥰", event.messageID, (err) => {}, true)
 		}
-	ncludes("salamer uttor") || react.includes("السلامعليكم") || react.includes("assalamualaykum") ||
+	if(react.includes("salamer uttor") || react.includes("السلامعليكم") || react.includes("assalamualaykum") ||
 react.includes("assalamulaikum") ||
 react.includes("আসসালামুআলাইকুম") ||
 react.includes("असलमुअलैकुम") ||
@@ -71,7 +71,7 @@ react.includes("ভুল সালাম দিলে কি হয়")) {
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("❌", event.messageID, (err) => {}, true)
 		}
-react.includes("তুই সালাম দে তো") || react.includes("tui salam de to") || react.includes("salam kaiche deti he") || react.includes("salam kemne dey")) {
+if(react.includes("তুই সালাম দে তো") || react.includes("tui salam de to") || react.includes("salam kaiche deti he") || react.includes("salam kemne dey")) {
 		var msg = {
 				body: "❌ One word wrong means change of meaning. So please give salam correctly➡️Arabic- السلام عليكم و الرحمة✅ ا➡️বাংলা - আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি✅➡️English ল- assalamu alaikum wa Rahmatullah✅"
 			}
