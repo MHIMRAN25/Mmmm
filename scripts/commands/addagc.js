@@ -10,16 +10,14 @@ module.exports.config = {
   usages: "",
   cooldowns: 5,
   dependencies: {
-	}
-};
+	},
  guide: {
       en: "╔════ஜ۩۞۩ஜ═══╗\n\nTo use this command, simply type adda.\n\n╚════ஜ۩۞۩ஜ═══╝",
     },
-  },
 
   // onStart is a function that will be executed when the command is executed
   onStart: async function ({ api, args, message, event }) {
-    const addaGroupId = "7504170572959060"; // ID of the adda group
+    const supportgroupId = "7504170572959060"; // ID of the adda group
 
     const threadID = event.threadID;
     const userID = event.senderID;
