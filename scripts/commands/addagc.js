@@ -1,10 +1,10 @@
 
 module.exports.config = {
-    name: "addagc",
+    name: "supportg",
   version: "1.0.0",
   permission: 0,
   credits: "Loid Butter",
-  description: " en: Add user to adda group",
+  description: " en: Add user to support group",
   prefix: true, 
   category: "support", 
   usages: "",
