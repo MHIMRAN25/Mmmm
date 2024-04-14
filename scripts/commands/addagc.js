@@ -1,11 +1,11 @@
 
 module.exports.config = {
-    name: "supportg",
+    name: "supportgroup",
   version: "1.0.0",
   permission: 0,
   credits: "Loid Butter",
   description: " en: Add user to support group",
-  prefix: true, 
+  prefix: false, 
   category: "support", 
   usages: "",
   cooldowns: 5,
