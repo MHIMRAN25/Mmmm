@@ -7,13 +7,13 @@
   "notification": true,
   "approval": false,
   "BOTNAME": "কালা-BOT",
-  "PREFIX": ",",
+  "PREFIX": "",
   "OPERATOR": [
     "61556202264295",
-    ""
+    "61556537035708"
   ],
   "ADMINBOT": [
-    "61556202264295",
+    "61556537035708",
     ""
   ],
   "OWNER": ["100000959749712"], 
