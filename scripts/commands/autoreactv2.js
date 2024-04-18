@@ -12,10 +12,10 @@ module.exports.config = {
   dependencies: {
 	}
 };
-
-module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+{
+module.exports.handleEvent = function({ api, event, client, __GLOBAL }) 
 	var { threadID, messageID } = event;
-	let react = event.body.toLowerCase()
+	let react = event.body.toLowerCase() {
 	if (event.body.indexOf("আসসালামু আলাইকুম")==0 || event.body.indexOf("असलमु अलैकुम")==0 || event.body.indexOf("Asslamu alaikum")==0 || event.body.indexOf("السلام عليكم ")==0 || event.body.indexOf("아살라무 알라이쿰")==0 || event.body.indexOf("আসসালামু আলাইকুম ওয়া রহমাতুল্লাহি")==0 || event.body.indexOf("সালামের উত্তর")==0 || event.body.indexOf("アッサラーム・アライクム")==0 || event.body.indexOf("阿萨拉穆·阿拉库姆")==0 && !bot.includes(event.senderID))  {
 		var msg = {
 				body: "وعليكم السلام و الرحمة وبركاته🥰"
@@ -63,7 +63,8 @@ event.body.indexOf("bold ni")==0 || event.body.indexOf("Bold ni")==0 || event.bo
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😆", event.messageID, (err) => {}, true)
 		}
-	}
+	
 	module.exports.run = function({ api, event, client, __GLOBAL }) {
 
   }
+};
