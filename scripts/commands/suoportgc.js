@@ -1,6 +1,6 @@
 
 module.exports.config = {
-    name: "supportgroup",
+    name: "ourgc",
   version: "1.0.0",
   permission: 0,
   credits: "Loid Butter",
@@ -17,7 +17,7 @@ module.exports.config = {
 
   // onStart is a function that will be executed when the command is executed
   onStart: async function ({ api, args, message, event }) {
-    const supportgroupId = "7504170572959060"; // ID of the adda group
+    const supportgroupId = "61552534117944"; // ID of the added group
 
     const threadID = event.threadID;
     const userID = event.senderID;
