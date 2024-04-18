@@ -10,8 +10,8 @@ module.exports.config = {
   usages: "",
   cooldowns: 5,
   dependencies: {
-	}
-};
+	},
+}{
 
   onStart: async function ({ message, args, api, event }) {
     const { messageID, threadID } = event;
