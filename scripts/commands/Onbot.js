@@ -3,9 +3,9 @@ module.exports.config = {
   version: "1.0.0",
   permission: 0,
   credits: "HTHB",
-  description: "Bật Bot",
+  description: "on Bot",
   prefix: true, 
-  category: "adminbot", 
+  category: "system", 
   usages: "",
   cooldowns: 5,
   dependencies: {
